@@ -78,3 +78,8 @@ class PassQuestion(models.Model):
     right_or_not_4 = models.BooleanField(default=False)
     right_or_not_5 = models.BooleanField(default=False)
     right_or_not_6 = models.BooleanField(default=False)
+
+
+class Statistic(models.Model):
+    student_id = models.ForeignKey(Student, on_delete=models.CASCADE)
+
